@@ -1,3 +1,8 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-transition:1s all;
+}
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	background: #42413C;
@@ -117,4 +122,18 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	height:0;
 	font-size: 1px;
 	line-height: 0px;
+}
+
+body.preload{
+	-webkit-transform: scale(0,0) translateY(700px);
+	opacity:0;
+}
+
+body.preload p{
+	color:red;
+}
+
+body.preload .sidebar1{
+	-webkit-transform:translateX(-800px);
+	-webkit-transition-delay:1s; /*bara inke bad az 1s az transition asli amal kone bayad che konam yadom rafte*/
 }

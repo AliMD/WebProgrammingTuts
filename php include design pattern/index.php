@@ -5,7 +5,7 @@
 	require('inc/pages_head.php'); //age in part ejra nashe complete page mirize beham va chon user natarse REQUIRE beytare :D
 ?>
 </head>
-<body>
+<body class="preload">
 <div class="container">
   <?php
   	include('inc/mod_header.php');
