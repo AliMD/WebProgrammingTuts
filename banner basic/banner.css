@@ -93,3 +93,21 @@ div.banner div.index{
 	font-size:25px;
 	-webkit-transition:all 800ms;
 }
+div.banner div.right{
+	width:100px;
+	height:67px;
+	position:absolute;
+	left:500px;
+	top:465px;
+	background-image:url(images/arrow-2.png);	
+	opacity:0.3;
+}
+div.banner div.left{
+	width:100px;
+	height:67px;
+	position:absolute;
+	left:390px;
+	top:465px;
+	background-image:url(images/arrow-3.png);
+	opacity:0.3;
+}

@@ -10,8 +10,14 @@ window.onload=function(){
 	
 	var liBtns=document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
 	
+	var right=document.getElementsByClassName('banner').item(0).getElementsByClassName('right').item(0);
+	var left=document.getElementsByClassName('banner').item(0).getElementsByClassName('left').item(0);
 	
-	var j=1;
+	
+	
+	
+	var j;
+	j=i;
 	divScrl.onclick=function(){
 		inx.item(0).innerHTML=(j+1)+'/'+5;
 		this.style.left=-(j*980)+'px';
@@ -20,15 +26,34 @@ window.onload=function(){
 		if(j==liBtns.length) j=0;  //change pictres with just one click
 	}
 	
+	
+	right.onclick=function(){
+		divScrl.style.left=-(j*980)+'px';
+		j++;		
+		
+		inx.item(0).innerHTML=j+'/'+'5';
+		if(j>=5) j=0;
+	}
+	
+	
+	left.onclick=function(){
+		divScrl.style.left=-((j-1)*980)+'px';
+		j--;		
+		
+		inx.item(0).innerHTML=(j+1)+'/'+'5';
+		if(j<=0) j=5;
+	}
+	
 	for(var i=0;i<liBtns.length;i++){
 		(function(i){
 			liBtns.item(i).onclick=function(){
 				divScrl.style.left= (-i*bannerWidth) + 'px';
-				
+				j=i;
 				inx.item(0).innerHTML=(i+1)+'/'+liBtns.length;  //number counter
 			}
 		})(i);
 	}
+	
 	
 	// another way to use btns
 	/* liBtns.item(0).onclick=function(){
