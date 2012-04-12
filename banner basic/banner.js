@@ -14,7 +14,7 @@ window.onload=function(){
 			liBtns.item(i).onclick=function(){
 				divScrl.style.left= (-i*bannerWidth) + 'px';
 				
-				inx.item(0).innerHTML=(i+1)+'/'+liBtns.length;
+				inx.item(0).innerHTML=(i+1)+'/'+liBtns.length;  //number counter
 			}
 		})(i);
 	}
