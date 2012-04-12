@@ -30,4 +30,26 @@ window.onload=function(){
 		})(i);
 	}
 	
+	// another way to use btns
+	/* liBtns.item(0).onclick=function(){
+		divScrl.style.left=0;
+		inx.item(0).innerHTML="1/5";
+	}
+	liBtns.item(1).onclick=function(){
+		divScrl.style.left=-980+'px';
+		inx.item(0).innerHTML="2/5";
+	}
+	liBtns.item(2).onclick=function(){
+		divScrl.style.left=-(2*980)+'px';
+		inx.item(0).innerHTML="3/5";
+	}
+	liBtns.item(3).onclick=function(){
+		divScrl.style.left=-(3*980)+'px';
+		inx.item(0).innerHTML="4/5";
+	}
+	liBtns.item(4).onclick=function(){
+		divScrl.style.left=-(4*980)+'px';
+		inx.item(0).innerHTML="4/5";
+	} */
+	
 }
