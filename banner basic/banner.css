@@ -9,6 +9,7 @@
 div.container{
 	width:980px;
 	margin:0 auto;
+	padding-top:1px;
 }
 
 div.banner{
@@ -16,7 +17,7 @@ div.banner{
 	height:570px;
 	overflow:hidden;
 	margin-top:20px;
-	position:relative;
+	position:relative; //fix margin-top bug	
 }
 
 div.banner div.scroll{
@@ -81,4 +82,14 @@ div.banner ul.btn li.active{
 	height:18px;
 	margin-top:-8px;
 	-webkit-transition-duration:400ms;
+}
+
+div.banner div.index{
+	position:absolute;
+	left:0;
+	bottom:5px;
+	width:50px;
+	height:20px;
+	font-size:25px;
+	-webkit-transition:all 800ms;
 }
