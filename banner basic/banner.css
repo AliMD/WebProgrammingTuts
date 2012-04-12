@@ -9,7 +9,7 @@
 div.container{
 	width:980px;
 	margin:0 auto;
-	padding-top:1px;
+	padding-top:1px;//fix margin-top bug
 }
 
 div.banner{
@@ -17,7 +17,7 @@ div.banner{
 	height:570px;
 	overflow:hidden;
 	margin-top:20px;
-	position:relative; //fix margin-top bug	
+	position:relative; 	
 }
 
 div.banner div.scroll{
