@@ -9,6 +9,7 @@
 div.container{
 	width:980px;
 	margin:0 auto;
+	padding-top:1px; /*fix margin-top bug*/
 }
 
 div.banner{
@@ -16,7 +17,7 @@ div.banner{
 	height:570px;
 	overflow:hidden;
 	margin-top:20px;
-	position:relative;
+	position:relative; 	
 }
 
 div.banner div.scroll{
@@ -81,4 +82,32 @@ div.banner ul.btn li.active{
 	height:18px;
 	margin-top:-8px;
 	-webkit-transition-duration:400ms;
+}
+
+div.banner div.index{
+	position:absolute;
+	left:0;
+	bottom:5px;
+	width:50px;
+	height:20px;
+	font-size:25px;
+	-webkit-transition:all 800ms;
+}
+div.banner div.right{
+	width:100px;
+	height:67px;
+	position:absolute;
+	left:500px;
+	top:465px;
+	background-image:url(images/arrow-2.png);	
+	opacity:0.3;
+}
+div.banner div.left{
+	width:100px;
+	height:67px;
+	position:absolute;
+	left:390px;
+	top:465px;
+	background-image:url(images/arrow-3.png);
+	opacity:0.3;
 }
