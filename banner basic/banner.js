@@ -16,6 +16,20 @@ window.onload=function(){
 	
 	
 	
+	
+	
+	for(var i=0;i<liBtns.length;i++){
+		(function(i){
+			liBtns.item(i).onclick=function(){
+				divScrl.style.left= (-i*bannerWidth) + 'px';
+				j=i;
+				inx.item(0).innerHTML=(i+1)+'/'+liBtns.length;  //number counter
+			}
+		})(i);
+	}
+	
+	
+	
 	var j;
 	j=i;
 	divScrl.onclick=function(){
@@ -28,30 +42,22 @@ window.onload=function(){
 	
 	
 	right.onclick=function(){
+		if(j>=5) j=0;
 		divScrl.style.left=-(j*980)+'px';
 		j++;		
 		
 		inx.item(0).innerHTML=j+'/'+'5';
-		if(j>=5) j=0;
+		
 	}
 	
 	
 	left.onclick=function(){
+		if(j<=0) j=5;
 		divScrl.style.left=-((j-1)*980)+'px';
 		j--;		
 		
 		inx.item(0).innerHTML=(j+1)+'/'+'5';
-		if(j<=0) j=5;
-	}
-	
-	for(var i=0;i<liBtns.length;i++){
-		(function(i){
-			liBtns.item(i).onclick=function(){
-				divScrl.style.left= (-i*bannerWidth) + 'px';
-				j=i;
-				inx.item(0).innerHTML=(i+1)+'/'+liBtns.length;  //number counter
-			}
-		})(i);
+		
 	}
 	
 	
