@@ -33,6 +33,10 @@ window.onload=function(){
 		})(i);
 	}
 	
-	// auto play !
+	var autoSlide=function(){
+		nextSlide(n)			//execute nextSlide 
+		setTimeOut(autoSlide,1000)}	//execute autoSlide and ech 1 sec execute autoSlide function 
+	setTimeOut(autoSlide,1000);		//confused? :-?
+	}
 	
 }
