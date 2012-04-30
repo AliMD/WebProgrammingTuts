@@ -4,7 +4,6 @@ body{
 
 .slider{
 	height:400px;
-	width:600px;
 	overflow:hidden;
 }
 
@@ -14,12 +13,13 @@ body{
 
 .slider .scroll > div{
 		height:inherit;
-		overflow:hidden;	
+		overflow:hidden;
+		border-left:5px black solid;	
 }
 
 .slider .scroll > div img{
 	opacity:.6;
-		-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(65%,transparent),to(rgba(255,255,255,0.5)));
+	-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(65%,transparent),to(rgba(255,255,255,0.5)));
 		-webkit-transition:opacity 1s;
 }
 
