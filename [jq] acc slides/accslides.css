@@ -1,20 +1,25 @@
-
-/* Acc Slide Section
--------------------------------------------------- */
-div.accslides{
-	width:600px;
-	overflow:hidden;
-	margin: 0 auto;
+body{
+	background-color:black;
 }
 
-div.accslides .train{
-	width:700px;
+.slider{
+	height:400px;
 }
 
-div.accslides .train > div{
-	width:150px;
-	overflow: hidden;
-	float: left;
-	/* auto height by img */
+.scroll{
+	height:inherit;
 }
 
+.slider .scroll > div{
+		height:inherit;	
+}
+
+.slider .scroll > div img{
+	opacity:.6;
+		-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(65%,transparent),to(rgba(255,255,255,0.5)));
+		-webkit-transition:opacity 1s;
+}
+
+.slider .scroll > div img:hover{
+	opacity:1;
+}
