@@ -1,24 +1,25 @@
 $(function(){
-
-	var slides = $('.accslides .train > div');
-
-	slides.mouseover(function(){
+	
+	var imgTags = $('.slider .scroll > div');
+	
+	imgTags.mouseover(function(){
 		
-		slides.stop().animate({
-			'width':'50px'
-		},700);
-
+		imgTags.stop().animate({
+			'width':'40px'
+			},650);
+				
 		$(this).stop().animate({
 			'width':'450px'
-		},700);
-
+			},650);
+			
 	});
-
-	$('.accslides').mouseout(function(){
-		slides.stop().animate({
-			'width':'150px'
-		},500);
+	
+	imgTags.mouseout(function(){
+		
+		imgTags.stop().animate({
+			'width':'110px'
+		},400);
+		
 	});
-
+	
 });
-
