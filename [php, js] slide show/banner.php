@@ -56,7 +56,7 @@
     <input type="button" value="play" onclick="resetAutoPlay()" /> <!-- cleat last, maybe click more ! -->
     <input type="button" value="stop" onclick="stopAutoPlay()" />
 	&nbsp;&nbsp;
-    <input type="text" disabled="1" size="64" value="beshe ke ye khayyer in btn haye gorz ro khoshkel kone !" />
+    <input type="text" disabled="1" size="64" value="beshe ke ye khayyer in btn haye gorz ro khoshkel kone ! ((kh kh kh) ! {Ye khaier nist?} )" />
 
 
 </div>
